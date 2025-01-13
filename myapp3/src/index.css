@@ -1,0 +1,118 @@
+/* Styles globaux */
+body {
+  background-color: #FFFFFF; /* Fond blanc pur */
+  color: #000000; /* Texte noir */
+  font-family: 'Arial', sans-serif; /* Police simple et élégante */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000; /* Fond noir */
+  color: #FFFFFF; /* Texte blanc */
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  color: #D4AF37; /* Or subtil pour l’effet au survol */
+}
+
+/* Hero Section */
+.hero-section {
+  background-color: #F4F4F4; /* Gris clair */
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  color: #000000;
+}
+
+.hero-section p {
+  font-size: 18px;
+  color: #666666;
+}
+
+.hero-section button {
+  background-color: #D4AF37; /* Or subtil */
+  color: #FFFFFF;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero-section button:hover {
+  background-color: #C6A135; /* Légèrement plus foncé au survol */
+}
+
+/* Carousel */
+.carousel-inner img {
+  object-fit: contain;
+  height: 400px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #D4AF37; /* Points dorés */
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #FFFFFF;
+}
+
+.card {
+  background-color: #F4F4F4; /* Gris clair */
+  border: 1px solid #E0E0E0; /* Bordure légère */
+  border-radius: 8px;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+}
+
+.card h3 {
+  color: #000000;
+}
+
+.card p {
+  color: #666666;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000; /* Noir profond */
+  color: #FFFFFF; /* Texte blanc */
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #D4AF37;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #FFFFFF;
+}
