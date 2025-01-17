@@ -4,7 +4,13 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
       <div className="container">
-        <a className="navbar-brand" href="#">Dior Boutique</a>
+        <a className="navbar-brand" href="#">
+          <img 
+            className="navbar-logo" 
+            src=" " 
+            alt="Dior Boutique" 
+          />
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -30,8 +36,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-    </nav> 
+    </nav>
   );
 };
 
 export default Navbar;
+

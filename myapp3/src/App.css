@@ -37,43 +37,67 @@
   }
 }
 
-/* Section des cartes */
 .cards-section {
-  display: flex; /* Aligne les cartes horizontalement */
-  justify-content: space-around; /* Espacement uniforme */
+  display: flex;
+  justify-content: space-around;
   padding: 20px;
-  gap: 20px; /* Espacement entre les cartes */
+  gap: 20px;
   background-color: #FFFFFF;
+  flex-wrap: wrap; 
 }
 
 .card {
-  background-color: #F4F4F4; /* Gris clair */
-  border: 1px solid #E0E0E0; /* Bordure légère */
+  background-color: #F4F4F4;
+  border: 1px solid #E0E0E0;
   border-radius: 8px;
   padding: 15px;
-  width: 300px; /* Largeur fixe pour uniformiser */
+  width: 300px;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .card img {
-  width: 100%; /* Largeur maximale sans dépassement */
-  height: auto; /* Respecte les proportions */
+  width: 100%;
+  height: auto;
   margin-bottom: 10px;
   border-radius: 4px;
 }
 
 .card h3 {
-  color: #000000; /* Texte noir */
+  color: #000000;
   font-size: 20px;
-  margin: 10px 0; /* Espacement autour du titre */
+  margin: 10px 0;
 }
 
 .card p {
-  color: #666666; /* Texte gris */
-  font-size: 14px; /* Taille plus petite pour le texte */
-  line-height: 1.5; /* Espacement entre les lignes */
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
 }
+
+.carousel-image {
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; 
+  }
+}
+
+.navbar-logo {
+  width: 100px;
+  height: auto;
+  max-height: 50px;
+}
+

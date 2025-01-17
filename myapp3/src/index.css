@@ -1,32 +1,29 @@
-/* Styles globaux */
 body {
-  background-color: #FFFFFF; /* Fond blanc pur */
-  color: #000000; /* Texte noir */
-  font-family: 'Arial', sans-serif; /* Police simple et élégante */
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-/* Navbar */
 .navbar {
-  background-color: #000000; /* Fond noir */
-  color: #FFFFFF; /* Texte blanc */
+  background-color: #000000;
+  color: #d385c8;
   padding: 10px 20px;
 }
 
 .navbar a {
-  color: #FFFFFF;
+  color: #322191;
   text-decoration: none;
   margin-right: 20px;
 }
 
 .navbar a:hover {
-  color: #D4AF37; /* Or subtil pour l’effet au survol */
+  color: #D4AF37;
 }
 
-/* Hero Section */
 .hero-section {
-  background-color: #F4F4F4; /* Gris clair */
+  background-color: #F4F4F4;
   text-align: center;
   padding: 50px 20px;
 }
@@ -42,7 +39,7 @@ body {
 }
 
 .hero-section button {
-  background-color: #D4AF37; /* Or subtil */
+  background-color: #D4AF37;
   color: #FFFFFF;
   border: none;
   padding: 10px 20px;
@@ -51,10 +48,9 @@ body {
 }
 
 .hero-section button:hover {
-  background-color: #C6A135; /* Légèrement plus foncé au survol */
+  background-color: #C6A135;
 }
 
-/* Carousel */
 .carousel-inner img {
   object-fit: contain;
   height: 400px;
@@ -63,25 +59,32 @@ body {
 }
 
 .carousel-indicators [data-bs-target] {
-  background-color: #D4AF37; /* Points dorés */
+  background-color: #D4AF37;
 }
 
-/* Cards Section */
 .cards-section {
   display: flex;
   justify-content: space-around;
   padding: 20px;
   background-color: #FFFFFF;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .card {
-  background-color: #F4F4F4; /* Gris clair */
-  border: 1px solid #E0E0E0; /* Bordure légère */
+  background-color: #F4F4F4;
+  border: 1px solid #E0E0E0;
   border-radius: 8px;
   padding: 20px;
   width: 30%;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card h3 {
@@ -99,10 +102,9 @@ body {
   border-radius: 4px;
 }
 
-/* Footer */
 footer {
-  background-color: #000000; /* Noir profond */
-  color: #FFFFFF; /* Texte blanc */
+  background-color: #000000;
+  color: #FFFFFF;
   padding: 20px;
   text-align: center;
 }
@@ -116,3 +118,21 @@ footer a {
 footer a:hover {
   color: #FFFFFF;
 }
+
+
+  .cards-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section p {
+    font-size: 16;
+  }

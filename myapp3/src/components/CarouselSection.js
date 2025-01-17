@@ -1,5 +1,6 @@
-import React from 'react';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import React from "react";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./CarouselSection.js"; 
 
 const CarouselSection = () => {
   return (
@@ -8,25 +9,22 @@ const CarouselSection = () => {
         <div className="carousel-item active">
           <img
             src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dweb80653a/images/beauty/03-SKINCARE/2023/Skincare-map/PrestigeCreme_DuoMHR_1850x2000.jpg"
-            className="d-block w-100"
+            className="d-block w-100 carousel-image"
             alt="Dior Prestige"
-            style={{ height: '400px', objectFit: 'cover' }} /* Style en ligne */
           />
         </div>
         <div className="carousel-item">
           <img
             src="https://www.dior.com/on/demandware.static/-/Library-Sites-DiorSharedLibrary/default/dwc50b5fbc/images/beauty/03-SKINCARE/2023/Skincare-map/DreamSkin_Serum_1850x2000.jpg"
-            className="d-block w-100"
+            className="d-block w-100 carousel-image"
             alt="Dream Skin"
-            style={{ height: '400px', objectFit: 'cover' }} /* Style en ligne */
           />
         </div>
         <div className="carousel-item">
           <img
             src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_K125qWLSGET8W_hOJ4owoKvsvb4H6yFj1fDmgmYtiTyfm3Im2_WbN8R90fmh0_PFZ4brlOku4ltKQwOrugXwBmoRr2AeNMnYxWxHmZ-j4h9hBbVgJZAkv2Lr_kG2xbu0NlT5t0N9xis/s650/dior-maquillage-printemps-2021.jpg"
-            className="d-block w-100"
+            className="d-block w-100 carousel-image"
             alt="Blush Dior"
-            style={{ height: '400px', objectFit: 'cover' }} /* Style en ligne */
           />
         </div>
       </div>
@@ -43,4 +41,5 @@ const CarouselSection = () => {
 };
 
 export default CarouselSection;
+
 
